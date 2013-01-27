@@ -1,0 +1,11 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" EnableViewState="false" CodeBehind="Default.master.cs" Inherits="ExamineSystem.master.Default" %>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="utf-8" />
+    <link href="/css/css.css" type="text/css" rel="stylesheet">
+    <title>校园网络考试系统</title>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<asp:ContentPlaceHolder ID="content" runat="server"></asp:ContentPlaceHolder>
+</html>

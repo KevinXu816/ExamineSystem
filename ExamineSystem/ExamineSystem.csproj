@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2BC40262-CE47-49AE-BE92-F71F2DD0BF89}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExamineSystem</RootNamespace>
+    <AssemblyName>ExamineSystem</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataFrameworkLibrary">
+      <HintPath>..\Dependencies\DataFrameworkLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Dependencies\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\css.css" />
+    <Content Include="esdata.sql" />
+    <Content Include="images\admin.gif" />
+    <Content Include="images\admin_bg_head.gif" />
+    <Content Include="images\back.gif" />
+    <Content Include="images\bullet.gif" />
+    <Content Include="images\copy.gif" />
+    <Content Include="images\create.gif" />
+    <Content Include="images\cur.cur" />
+    <Content Include="images\del.gif" />
+    <Content Include="images\dot.gif" />
+    <Content Include="images\edit.gif" />
+    <Content Include="images\iconbig.gif" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\login_1.jpg" />
+    <Content Include="images\login_2.jpg" />
+    <Content Include="images\login_3.jpg" />
+    <Content Include="images\login_pass.gif" />
+    <Content Include="images\login_user.gif" />
+    <Content Include="images\login_vali.gif" />
+    <Content Include="images\logo_2.jpg" />
+    <Content Include="images\minus.gif" />
+    <Content Include="images\plus.gif" />
+    <Content Include="images\random.gif" />
+    <Content Include="images\select.gif" />
+    <Content Include="images\show.gif" />
+    <Content Include="images\some.gif" />
+    <Content Include="images\sound.gif" />
+    <Content Include="images\title.gif" />
+    <Content Include="images\title_bg_hide.gif" />
+    <Content Include="images\title_bg_quit.gif" />
+    <Content Include="images\title_bg_quit1.gif" />
+    <Content Include="images\title_bg_show.gif" />
+    <Content Include="login.aspx" />
+    <Content Include="pageexamine.aspx" />
+    <Content Include="pageexit.aspx" />
+    <Content Include="pagehistory.aspx" />
+    <Content Include="pagehistoryadv.aspx" />
+    <Content Include="pageleft.aspx" />
+    <Content Include="pagemanage.aspx" />
+    <Content Include="pagequestion.aspx" />
+    <Content Include="pageselfinfo.aspx" />
+    <Content Include="pagestart.aspx" />
+    <Content Include="pageupfile.aspx" />
+    <Content Include="pageupfileback.aspx" />
+    <Content Include="script\date.js" />
+    <Content Include="script\functions.js" />
+    <Content Include="script\PagesFunc.js" />
+    <Content Include="script\SeleMultObj.js" />
+    <Content Include="script\tabpage.js" />
+    <Content Include="titlepage.aspx" />
+    <Content Include="validate.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="welcome.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="action\inner\AAction.cs" />
+    <Compile Include="action\inner\ActionResult.cs" />
+    <Compile Include="action\inner\ATask.cs" />
+    <Compile Include="action\inner\IAction.cs" />
+    <Compile Include="action\inner\ITask.cs" />
+    <Compile Include="action\Login.cs" />
+    <Compile Include="action\PageExamine.cs" />
+    <Compile Include="action\PageHistory.cs" />
+    <Compile Include="action\PageHistoryAdv.cs" />
+    <Compile Include="action\PageManage.cs" />
+    <Compile Include="action\PageQuestion.cs" />
+    <Compile Include="action\PageSelfInfo.cs" />
+    <Compile Include="action\utility\ActionTaskUtility.cs" />
+    <Compile Include="pageexamine.aspx.cs">
+      <DependentUpon>pageexamine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pageexamine.aspx.designer.cs">
+      <DependentUpon>pageexamine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pageexit.aspx.cs">
+      <DependentUpon>pageexit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pageexit.aspx.designer.cs">
+      <DependentUpon>pageexit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagehistory.aspx.cs">
+      <DependentUpon>pagehistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagehistory.aspx.designer.cs">
+      <DependentUpon>pagehistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagehistoryadv.aspx.cs">
+      <DependentUpon>pagehistoryadv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagehistoryadv.aspx.designer.cs">
+      <DependentUpon>pagehistoryadv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagemanage.aspx.cs">
+      <DependentUpon>pagemanage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagemanage.aspx.designer.cs">
+      <DependentUpon>pagemanage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagequestion.aspx.cs">
+      <DependentUpon>pagequestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagequestion.aspx.designer.cs">
+      <DependentUpon>pagequestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pageselfinfo.aspx.cs">
+      <DependentUpon>pageselfinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pageselfinfo.aspx.designer.cs">
+      <DependentUpon>pageselfinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagestart.aspx.cs">
+      <DependentUpon>pagestart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagestart.aspx.designer.cs">
+      <DependentUpon>pagestart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pageupfile.aspx.cs">
+      <DependentUpon>pageupfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pageupfile.aspx.designer.cs">
+      <DependentUpon>pageupfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pageupfileback.aspx.cs">
+      <DependentUpon>pageupfileback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pageupfileback.aspx.designer.cs">
+      <DependentUpon>pageupfileback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utility\StringUtility.cs" />
+    <Compile Include="view\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="exception\ActionHandlerParseException.cs" />
+    <Compile Include="exception\ActionParseException.cs" />
+    <Compile Include="handler\ActionHandler.ashx.cs">
+      <DependentUpon>ActionHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="pageleft.aspx.cs">
+      <DependentUpon>pageleft.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pageleft.aspx.designer.cs">
+      <DependentUpon>pageleft.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="titlepage.aspx.cs">
+      <DependentUpon>titlepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="titlepage.aspx.designer.cs">
+      <DependentUpon>titlepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utility\EncryptMD5.cs" />
+    <Compile Include="utility\Escape.cs" />
+    <Compile Include="utility\eslog\ESLogImpl.cs" />
+    <Compile Include="utility\eslog\ESLogManager.cs" />
+    <Compile Include="utility\eslog\ExceptionWrapper.cs" />
+    <Compile Include="utility\eslog\ExpandContext.cs" />
+    <Compile Include="utility\eslog\IESLog.cs" />
+    <Compile Include="utility\TrackLogManager.cs" />
+    <Compile Include="utility\eslog\ESLogger.cs" />
+    <Compile Include="utility\SessionManager.cs" />
+    <Compile Include="utility\SettingConfigUtility.cs" />
+    <Compile Include="validate.aspx.cs">
+      <DependentUpon>validate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="validate.aspx.designer.cs">
+      <DependentUpon>validate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="welcome.aspx.cs">
+      <DependentUpon>welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="welcome.aspx.designer.cs">
+      <DependentUpon>welcome.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="music\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntityModel\EntityModel.csproj">
+      <Project>{89A63A6A-A56E-4178-988E-5A823E8B2AF8}</Project>
+      <Name>EntityModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="master\Default.Master" />
+    <Content Include="setting.config" />
+    <Content Include="handler\ActionHandler.ashx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2486</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

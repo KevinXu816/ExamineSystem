@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="pageexit.aspx.cs" Inherits="ExamineSystem.pageexit" %>

@@ -1,0 +1,208 @@
+﻿.TableStyle{
+border-right: #183789 1px solid;
+border-top: #183789 1px solid;
+border-left: #183789 1px solid;
+width: 630px;
+border-bottom: #183789 1px solid;
+background-color: #ffffff;
+text-align:center;
+}
+
+.HeadStyle{
+font-weight: bold;
+font-size: 12px;
+background-image: url(../images/admin_bg_head.gif);
+color: white;
+background-color: #4455aa;
+}
+
+.BodyStyle{
+background-color: #e6ecf9;
+padding-bottom: 15px;
+padding-top: 10px;
+}
+
+.BodySubStyle{
+
+}
+
+
+.sec_menu {
+border-bottom:1px solid white;
+background:#d6dff7;
+}
+
+.menu_title span {
+position:relative;
+top:2px;
+left:8px;
+color:#215dc6;
+font-weight:bold;
+}
+
+body, td, input, select, textarea  {
+  font-size: 9pt; font-family: "宋体";
+  cursor: url('images/cur.cur');
+}
+
+body  {
+  background:#cad7f7;
+  scrollbar-face-color:#cad7f7; 
+  scrollbar-track-color:#cad7f7; 
+  scrollbar-arrow-color:#4774cf; 
+  scrollbar-highlight-color:#4774cf; 
+  scrollbar-shadow-color:#4774cf; 
+  scrollbar-3dlight-color:#cad7f7; 
+  scrollbar-darkshadow-color:#cad7f7;
+  cursor: url('images/cur.cur');
+}
+
+a  { font:normal 12px 宋体; color:#000000; text-decoration:none; }
+a:hover  { color:#428eff;text-decoration:none; }
+
+textarea,input.ip1 {
+ border:solid 1px #d4d4d4;
+ background-color: #fafafa;
+ color: #4d4d4d;
+}
+
+input.ip2 {
+  border:solid 1px #d4d4d4;
+  background-color: #fafafa;
+  color: #4d4d4d;
+}
+select {
+  color: #4d4d4d; background-color: #fafafa;
+}
+
+fieldset  {
+  border: #817FAD 1px solid;
+  padding-top: 10px;
+}
+
+
+.InputStyleF{
+border-right: #ffffff 0px solid; 
+border-top: #ffffff 0px solid;
+border-left: #ffffff 0px solid;
+border-bottom: #c0c0c0 1px solid;
+font-size: 9pt;
+height: 16px;
+background-color: #ffffff;
+}
+
+
+.buttonStyle {
+	color: #000000;
+	font-family: Verdana;
+	background-color: #ffffff;
+	border: 1px solid #666666;
+	cursor: hand;
+}
+
+
+
+.pages {
+	color: #000000;
+	cursor: default;
+	font-size: 10px;
+	font-family: Tahoma, Verdana;
+	padding: 3px 0px 3px 0px;
+}
+.pages .count, .pages .number, .pages .arrow {
+	color: #000000;
+	font-size: 10px;
+	background-color: #F7F7F7;
+	border: 1px solid #CCCCCC;
+}
+/* Page and PageCount Style */
+.pages .count {
+	font-weight: bold;
+	border-right: none;
+	padding: 2px 10px 1px 10px;
+}
+/* Mode 0,1,2 Style (Number) */
+.pages .number {
+	font-family: Verdana, Tahoma;
+	font-weight: normal;
+	padding: 2px 10px 1px 10px !important;
+	padding: 2px 10px 2px 10px;
+}
+.pages .number a, .pages .number span {
+	font-family: Verdana, Tahoma;
+	font-size: 10px;
+}
+.pages .number span {
+	color: #999999;
+	margin: 0px 3px 0px 3px;
+}
+.pages .number a {
+	color: #000000;
+	text-decoration: none;
+}
+.pages .number a:hover {
+	color: #0000ff;
+	text-decoration: none;
+}
+/* Mode 3 Style (Arrow) */
+.pages .arrow {
+	font-weight: normal;
+	padding: 0px 5px 0px 5px;
+}
+.pages .arrow a, .pages .arrow span {
+	font-size: 10px;
+	font-family: Webdings;
+}
+.pages .arrow span {
+	color: #999999;
+	margin: 0px 5px 0px 5px;
+}
+.pages .arrow a {
+	color: #000000;
+	text-decoration: none;
+}
+.pages .arrow a:hover {
+	color: #0000ff;
+	text-decoration: none;
+}
+/* Mode 4 Style (Select) */
+.pages select, .pages input {
+	color: #000000;
+	font-size: 10px;
+	font-family: Tahoma, Verdana;
+}
+/* Mode 5 Style (Input) */
+.pages .input input.ititle, .pages .input input.itext, .pages .input input.icount {
+	color: #666666;
+	font-weight: bold;
+	background-color: #F7F7F7;
+	border: 1px solid #CCCCCC;
+	padding-bottom: 2px !important;
+}
+.pages .input input.ititle {
+	width: 70px;
+	text-align: right;
+	border-right: none;
+}
+.pages .input input.itext {
+	width: 25px;
+	color: #000000;
+	text-align: right;
+	border-left: none;
+	border-right: none;
+}
+.pages .input input.icount {
+	width: 35px;
+	text-align: left;
+	border-left: none;
+}
+.pages .input input.ibutton {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-family: Verdana;
+	background-color: #999999;
+	border: 1px solid #666666;
+	padding: 0px;
+	margin-left: 2px;
+	cursor: hand;
+}
